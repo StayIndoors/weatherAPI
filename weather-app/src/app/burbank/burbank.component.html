@@ -1,0 +1,15 @@
+<fieldset id="container">
+  <h1 style="text-align:center">Burbank, CA</h1>
+  <div>
+    <div style="text-align:left; max-width:500px; display:inline-block" *ngIf="burbankObj != undefined">
+      <p>Humidity: {{burbankObj.main.humidity}}</p>
+      <p>Temperature (Average): {{ burbankObj.main.temp }}</p>
+      <p>Temperature (High): {{ burbankObj.main.temp_max }}</p>
+      <p>Temperature (Low): {{ burbankObj.main.temp_min }}</p>
+      <p>Status: {{ burbankObj.weather[0].description }}</p>
+    </div>
+    <div style="float: right">
+      <img src="./assets/images/burbank.jpeg" alt="A lovely Burbank evening.">
+    </div>
+  </div>
+</fieldset>

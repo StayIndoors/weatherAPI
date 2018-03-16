@@ -1,0 +1,15 @@
+<fieldset id="container">
+  <h1 style="text-align:center">Dallas, TX</h1>
+  <div>
+    <div style="text-align:left; max-width:500px; display:inline-block" *ngIf="dallasObj != undefined">
+      <p>Humidity: {{dallasObj.main.humidity}}</p>
+      <p>Temperature (Average): {{ dallasObj.main.temp }}</p>
+      <p>Temperature (High): {{ dallasObj.main.temp_max }}</p>
+      <p>Temperature (Low): {{ dallasObj.main.temp_min }}</p>
+      <p>Status: {{ dallasObj.weather[0].description }}</p>
+    </div>
+    <div style="float: right">
+      <img src="./assets/images/dallas.jpeg" alt="Dallas at night.">
+    </div>
+  </div>
+</fieldset>

@@ -1,0 +1,15 @@
+<fieldset id="container">
+  <h1 style="text-align:center">Washington D.C.</h1>
+  <div>
+    <div style="text-align:left; max-width:500px; display:inline-block" *ngIf="dcObj != undefined">
+      <p>Humidity: {{dcObj.main.humidity}}</p>
+      <p>Temperature (Average): {{ dcObj.main.temp }}</p>
+      <p>Temperature (High): {{ dcObj.main.temp_max }}</p>
+      <p>Temperature (Low): {{ dcObj.main.temp_min }}</p>
+      <p>Status: {{ dcObj.weather[0].description }}</p>
+    </div>
+    <div style="float: right">
+      <img src="./assets/images/washington.jpeg" alt="The geese of Washington D.C.">
+    </div>
+  </div>
+</fieldset>

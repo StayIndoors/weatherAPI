@@ -1,0 +1,15 @@
+<fieldset id="container">
+  <h1 style="text-align:center">San Jose, CA</h1>
+  <div>
+    <div style="text-align:left; max-width:500px; display:inline-block" *ngIf="sanjoseObj != undefined">
+      <p>Humidity: {{sanjoseObj.main.humidity}}</p>
+      <p>Temperature (Average): {{ sanjoseObj.main.temp }}</p>
+      <p>Temperature (High): {{ sanjoseObj.main.temp_max }}</p>
+      <p>Temperature (Low): {{ sanjoseObj.main.temp_min }}</p>
+      <p>Status: {{ sanjoseObj.weather[0].description }}</p>
+    </div>
+    <div style="float: right">
+      <img src="./assets/images/san-jose.jpeg" alt="An old man in San Jose." width="280">
+    </div>
+  </div>
+</fieldset>

@@ -1,0 +1,15 @@
+<fieldset id="container">
+  <h1 style="text-align:center">Seattle, WA</h1>
+  <div>
+    <div style="text-align:left; max-width:500px; display:inline-block" *ngIf="seattleObj != undefined">
+      <p>Humidity: {{seattleObj.main.humidity}}</p>
+      <p>Temperature (Average): {{ seattleObj.main.temp }}</p>
+      <p>Temperature (High): {{ seattleObj.main.temp_max }}</p>
+      <p>Temperature (Low): {{ seattleObj.main.temp_min }}</p>
+      <p>Status: {{ seattleObj.weather[0].description }}</p>
+    </div>
+    <div style="float: right">
+      <img src="./assets/images/seattle.jpeg" alt="A lovely seattle evening." width="280">
+    </div>
+  </div>
+</fieldset>

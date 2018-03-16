@@ -1,0 +1,15 @@
+<fieldset id="container">
+  <h1 style="text-align:center">Chicago, IL</h1>
+  <div>
+    <div style="text-align:left; max-width:500px; display:inline-block" *ngIf="chicagoObj != undefined">
+      <p>Humidity: {{ chicagoObj.main.humidity }}</p>
+      <p>Temperature (Average): {{ chicagoObj.main.temp }}</p>
+      <p>Temperature (High): {{ chicagoObj.main.temp_max }}</p>
+      <p>Temperature (Low): {{ chicagoObj.main.temp_min }}</p>
+      <p>Status: {{ chicagoObj.weather[0].description }}</p>
+    </div>
+    <div style="float: right">
+      <img src="./assets/images/chicago.jpeg" alt="The Chicago skyline">
+    </div>
+  </div>
+</fieldset>
